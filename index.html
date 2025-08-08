@@ -3,315 +3,600 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>An AI-Focused Computer Science Journey</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>AI Learning Hub | Premium WhatsApp Channels for AI Education</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join 13 premium AI learning WhatsApp channels. Master ChatGPT, Gemini, Deepseek, Machine Learning, Python, and more. Free AI education at your fingertips.">
+    <meta name="keywords" content="AI learning, WhatsApp channels, ChatGPT, Machine Learning, Python, AI education, Artificial Intelligence, Deep Learning">
+    <meta name="author" content="AI Learning Hub">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AI Learning Hub - Premium WhatsApp Channels">
+    <meta property="og:description" content="Join 13 premium AI learning WhatsApp channels and master the future of technology">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23667eea;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23764ba2;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='200' fill='url(%23grad)'/%3E%3Ctext x='200' y='100' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3EAI Learning Hub%3C/text%3E%3C/svg%3E">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Learning Hub - Premium WhatsApp Channels">
+    <meta name="twitter:description" content="Join 13 premium AI learning WhatsApp channels and master the future of technology">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2325D366'/%3E%3Cstop offset='100%25' style='stop-color:%23128C7E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='45' fill='url(%23grad)'/%3E%3Ctext x='50' y='60' text-anchor='middle' fill='white' font-size='40' font-weight='bold'%3E🤖%3C/text%3E%3C/svg%3E">
+    
+    <!-- Preload critical fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            --accent-gradient: linear-gradient(135deg, #667eea 0%, #25D366 100%);
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --text-light: rgba(255, 255, 255, 0.9);
+            --text-light-secondary: rgba(255, 255, 255, 0.7);
+            --shadow-soft: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+            --shadow-medium: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+            --shadow-strong: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --border-radius: 24px;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa;
-            color: #212529;
-        }
-        .chart-container {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-light); /* Default text color to light */
+            background: #1a1a2e; /* Dark base background */
+            min-height: 100vh;
             position: relative;
-            width: 100%;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 300px;
-            max-height: 350px;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 350px;
-                max-height: 400px;
+
+        /* Premium Animated Background */
+        .premium-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: linear-gradient(135deg, #1e1e3f 0%, #1a1a2e 100%);
+            overflow: hidden;
+        }
+        
+        .premium-bg::before {
+            content: '';
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            top: -20%;
+            left: -20%;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.2), transparent 70%);
+            animation: light-move 20s infinite alternate;
+        }
+
+        .premium-bg::after {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            bottom: -20%;
+            right: -20%;
+            background: radial-gradient(circle, rgba(37, 211, 102, 0.15), transparent 70%);
+            animation: light-move 25s infinite alternate-reverse;
+        }
+
+        @keyframes light-move {
+            from { transform: translate(0, 0) rotate(0deg); }
+            to { transform: translate(100px, 50px) rotate(180deg); }
+        }
+
+        .geometric-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            backdrop-filter: blur(10px);
+            animation: float 12s infinite ease-in-out;
+        }
+
+        .shape-1 {
+            width: 300px; height: 300px; top: 10%; left: -5%; animation-delay: 0s;
+        }
+        .shape-2 {
+            width: 200px; height: 200px; top: 60%; right: -3%; animation-delay: 3s; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+        .shape-3 {
+            width: 250px; height: 250px; bottom: 20%; left: 5%; animation-delay: 6s; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+        .shape-4 {
+            width: 180px; height: 180px; top: 30%; left: 70%; animation-delay: 9s; border-radius: 40% 60% 60% 40% / 40% 50% 50% 60%;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+            33% { transform: translate(40px, -40px) rotate(120deg) scale(1.1); }
+            66% { transform: translate(-30px, 30px) rotate(240deg) scale(0.9); }
+        }
+
+        /* Premium Glass Container */
+        .premium-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: clamp(1rem, 5vw, 2rem);
+            position: relative;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 4vw, 3rem);
+            margin-bottom: clamp(2rem, 6vw, 4rem);
+        }
+
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.2rem; border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--text-light); font-size: 0.875rem; font-weight: 500;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero-icon {
+            width: clamp(60px, 15vw, 100px); height: clamp(60px, 15vw, 100px);
+            background: var(--secondary-gradient);
+            border-radius: 50%;
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: clamp(2rem, 8vw, 3.5rem);
+            margin-bottom: 1.5rem;
+            animation: bounceIn 1s ease-out 0.3s both;
+            box-shadow: var(--shadow-medium);
+            position: relative;
+        }
+
+        .hero-icon::after {
+            content: ''; position: absolute; inset: -4px;
+            background: var(--secondary-gradient);
+            border-radius: 50%; z-index: -1; opacity: 0.3;
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.1); opacity: 0.1; }
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 800; line-height: 1.1;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.8) 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 4vw, 1.5rem);
+            color: var(--text-light); opacity: 0.9; margin-bottom: 2rem;
+            max-width: 600px; margin-left: auto; margin-right: auto;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        /* Premium Stats Grid */
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: clamp(1rem, 4vw, 2rem);
+            margin-bottom: clamp(3rem, 8vw, 5rem);
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 3vw, 2rem);
+            text-align: center;
+            transition: var(--transition);
+            animation: fadeInUp 0.8s ease-out calc(0.6s + var(--delay)) both;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-number {
+            font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 800;
+            background: var(--secondary-gradient);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            line-height: 1; margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-light); font-size: clamp(0.9rem, 3vw, 1.1rem);
+            font-weight: 500; opacity: 0.9;
+        }
+
+        /* Premium Channels Grid */
+        .channels-section {
+            margin-bottom: clamp(3rem, 8vw, 5rem);
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 5vw, 2.5rem); font-weight: 700;
+            color: var(--text-light); text-align: center;
+            margin-bottom: clamp(2rem, 6vw, 3rem);
+            animation: fadeInUp 0.8s ease-out 0.8s both;
+        }
+
+        .channels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+            gap: clamp(1.5rem, 4vw, 2rem);
+        }
+
+        .channel-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--border-radius);
+            padding: clamp(1.5rem, 4vw, 2rem);
+            text-decoration: none;
+            color: var(--text-light);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            animation: fadeInUp 0.6s ease-out calc(1s + var(--stagger)) both;
+        }
+
+        .channel-card::before {
+            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .channel-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--shadow-strong);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .channel-card:hover::before {
+            left: 100%;
+        }
+
+        .channel-header {
+            display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;
+        }
+
+        .channel-logo {
+            width: 60px; height: 60px; border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; color: white; font-weight: 700;
+            position: relative; flex-shrink: 0;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .channel-logo::after {
+            content: ''; position: absolute; inset: -2px; background: inherit;
+            border-radius: 18px; z-index: -1; opacity: 0.3; filter: blur(4px);
+        }
+
+        /* Premium Brand Colors */
+        .chatgpt { background: linear-gradient(135deg, #10a37f 0%, #1a7f64 100%); }
+        .deepseek { background: linear-gradient(135deg, #1e40af 0%, #3730a3 100%); }
+        .gemini { background: linear-gradient(135deg, #4285f4 0%, #34a853 100%); }
+        .perplexity { background: linear-gradient(135deg, #20b2aa 0%, #008b8b 100%); }
+        .copilot { background: linear-gradient(135deg, #0078d4 0%, #106ebe 100%); }
+        .generative { background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%); }
+        .prompt { background: linear-gradient(135deg, #9c88ff 0%, #8a76ff 100%); }
+        .ai-general { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .grok { background: linear-gradient(135deg, #1da1f2 0%, #0d8bd9 100%); }
+        .deeplearning { background: linear-gradient(135deg, #ff9500 0%, #ff8c00 100%); }
+        .studio { background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%); }
+        .ml { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .python { background: linear-gradient(135deg, #3776ab 0%, #ffd43b 100%); }
+
+        .channel-content { flex: 1; }
+
+        .channel-title {
+            font-size: 1.4rem; font-weight: 700; color: var(--text-light);
+            margin-bottom: 0.5rem; line-height: 1.3;
+        }
+
+        .channel-description {
+            color: var(--text-light-secondary);
+            font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;
+        }
+
+        .join-button {
+            background: var(--secondary-gradient); color: white; border: none;
+            padding: 0.875rem 2rem; border-radius: 12px; font-weight: 600;
+            font-size: 0.95rem; cursor: pointer; transition: var(--transition);
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+            position: relative; overflow: hidden;
+        }
+
+        .join-button::before {
+            content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0;
+            background: rgba(255,255,255,0.2); border-radius: 50%;
+            transition: all 0.4s ease; transform: translate(-50%, -50%);
+        }
+
+        .join-button:hover::before { width: 300px; height: 300px; }
+        .join-button:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); }
+        .join-button:active { transform: translateY(0); }
+
+        /* Premium Footer */
+        .premium-footer {
+            text-align: center;
+            padding: clamp(2rem, 6vw, 3rem);
+            color: var(--text-light);
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content { max-width: 600px; margin: 0 auto; }
+        .footer-title {
+            font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;
+            background: var(--secondary-gradient);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .footer-subtitle { opacity: 0.8; font-size: 0.95rem; }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounceIn {
+            from { opacity: 0; transform: scale(0.3); }
+            50% { opacity: 1; transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 640px) {
+            .channels-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .channel-header { flex-direction: row; text-align: left; }
+        }
+        @media (max-width: 480px) {
+            .stats-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Reduced Motion Support */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
             }
         }
-        .card {
-            background-color: #ffffff;
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-top: 4px solid transparent;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        }
-        .nav-button {
-            padding: 0.5rem 1rem;
-            border-radius: 9999px;
-            font-weight: 600;
-            transition: background-color 0.3s, color 0.3s;
-            cursor: pointer;
-        }
-        .nav-button.active {
-            background-color: #4A5568;
-            color: #FFFFFF;
-        }
-        .nav-button:not(.active) {
-            background-color: #E2E8F0;
-            color: #4A5568;
+
+        /* Focus States for Accessibility */
+        .channel-card:focus, .join-button:focus {
+            outline: 2px solid rgba(37, 211, 102, 0.6);
+            outline-offset: 2px;
         }
     </style>
 </head>
+
 <body>
-
-    <div class="container mx-auto p-4 md:p-8">
-
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-black text-gray-800">The Architect's Roadmap</h1>
-            <p class="text-lg md:text-xl text-gray-600 mt-2 max-w-3xl mx-auto">An Interactive Guide to a World-Class, AI-Focused Computer Science Education</p>
-        </header>
-
-        <nav class="flex justify-center space-x-2 md:space-x-4 mb-12 flex-wrap">
-            <button onclick="scrollToSection('philosophy')" class="nav-button active">Philosophy</button>
-            <button onclick="scrollToSection('foundations')" class="nav-button">Foundations</button>
-            <button onclick="scrollToSection('specialization')" class="nav-button">AI Specialization</button>
-            <button onclick="scrollToSection('profile')" class="nav-button">Beyond Academia</button>
-        </nav>
-
-        <main class="space-y-16">
-
-            <section id="philosophy" class="scroll-mt-20">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Core Philosophy</h2>
-                <p class="text-gray-600 mb-8 max-w-4xl mx-auto text-center">This curriculum is built on three pedagogical principles synthesized from world-class institutions. It's a roadmap to cultivate a "T-shaped" expert with broad computational understanding and deep, actionable knowledge of Artificial Intelligence.</p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="card border-t-indigo-500 text-center">
-                        <div class="text-4xl mb-3">🏛️</div>
-                        <h3 class="text-xl font-bold text-gray-800">Foundations First</h3>
-                        <p class="text-gray-600 mt-2">The initial two years are intensely focused on an unshakable foundation in mathematics, theory, and systems. Rushing into specialization without this base leads to superficial understanding.</p>
-                    </div>
-                    <div class="card border-t-teal-500 text-center">
-                        <div class="text-4xl mb-3">🛠️</div>
-                        <h3 class="text-xl font-bold text-gray-800">Theory Meets Practice</h3>
-                        <p class="text-gray-600 mt-2">Every abstract concept is linked to rigorous, hands-on implementation. True comprehension is forged in the crucible of building, analyzing, and debugging your own code.</p>
-                    </div>
-                    <div class="card border-t-amber-500 text-center">
-                        <div class="text-4xl mb-3">🚀</div>
-                        <h3 class="text-xl font-bold text-gray-800">The AI Pipeline</h3>
-                        <p class="text-gray-600 mt-2">The AI specialization is a structured progression, not a random collection of electives. It moves logically from broad principles to the state-of-the-art, building expertise layer by layer.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="foundations" class="scroll-mt-20">
-                 <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Part I: The Foundational Core (Years 1-2)</h2>
-                <p class="text-gray-600 mb-8 max-w-4xl mx-auto text-center">The first two years construct the intellectual infrastructure for all advanced work. This chart visualizes the balanced distribution of coursework, emphasizing the "Foundations First" principle by showing the focus on core Computer Science and Mathematics.</p>
-                <div class="card">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        <div class="text-center md:text-left">
-                            <h3 class="text-2xl font-bold text-gray-700 mb-4">Foundational Course Distribution</h3>
-                            <p class="text-gray-600 mb-4">A balanced curriculum ensures deep competency. The foundational years are heavily weighted towards core Computer Science principles and the essential Mathematics that provides the language for AI, supplemented by required science and humanities courses for a holistic engineering perspective.</p>
-                            <div id="foundations-legend" class="flex flex-wrap justify-center md:justify-start gap-4 text-sm"></div>
-                        </div>
-                        <div class="chart-container">
-                            <canvas id="foundationsChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="specialization" class="scroll-mt-20">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Part II: The AI Specialization Pipeline (Years 3-4)</h2>
-                <p class="text-gray-600 mb-8 max-w-4xl mx-auto text-center">With a strong foundation, the curriculum pivots to a structured AI specialization. This interactive timeline reveals the deliberate pipeline of courses designed to build expertise, moving from broad principles to the state-of-the-art techniques that power modern AI.</p>
-                <div class="card">
-                    <div id="timeline-nav" class="flex justify-center border-b mb-6">
-                        <button data-semester="5" class="timeline-btn active p-4 font-semibold text-indigo-600 border-b-2 border-indigo-600">Semester 5</button>
-                        <button data-semester="6" class="timeline-btn p-4 font-semibold text-gray-500">Semester 6</button>
-                        <button data-semester="7" class="timeline-btn p-4 font-semibold text-gray-500">Semester 7</button>
-                        <button data-semester="8" class="timeline-btn p-4 font-semibold text-gray-500">Semester 8</button>
-                    </div>
-                    <div id="timeline-content" class="p-4 min-h-[200px]">
-                    </div>
-                </div>
-            </section>
-            
-            <section id="profile" class="scroll-mt-20">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Part III: Crafting an Exceptional Profile</h2>
-                <p class="text-gray-600 mb-8 max-w-4xl mx-auto text-center">Academic excellence is necessary but not sufficient. Top-tier students demonstrate passion and initiative beyond the classroom. These four pillars are critical for translating knowledge into real-world capability and creating a standout professional profile.</p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="card border-t-indigo-500">
-                        <div class="text-4xl mb-3">🔬</div>
-                        <h3 class="text-xl font-bold text-gray-800">Undergraduate Research</h3>
-                        <p class="text-sm text-gray-600 mt-2">Engage with faculty on novel problems to gain mentorship and experience at the frontier of the field, mirroring MIT's UROP model.</p>
-                    </div>
-                    <div class="card border-t-teal-500">
-                        <div class="text-4xl mb-3">📂</div>
-                        <h3 class="text-xl font-bold text-gray-800">Project Portfolio</h3>
-                        <p class="text-sm text-gray-600 mt-2">Your GitHub is your resume. Build a collection of high-quality projects that showcase your skills and passion for building.</p>
-                    </div>
-                    <div class="card border-t-amber-500">
-                        <div class="text-4xl mb-3">💻</div>
-                        <h3 class="text-xl font-bold text-gray-800">Competitive Programming</h3>
-                        <p class="text-sm text-gray-600 mt-2">Hone algorithmic problem-solving to a razor's edge on platforms like LeetCode. This develops speed, precision, and interview readiness.</p>
-                    </div>
-                    <div class="card border-t-rose-500">
-                        <div class="text-4xl mb-3">🌐</div>
-                        <h3 class="text-xl font-bold text-gray-800">Open Source Contribution</h3>
-                        <p class="text-sm text-gray-600 mt-2">Contribute to libraries like PyTorch or Hugging Face. This signals you can navigate large codebases and collaborate effectively.</p>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <footer class="text-center mt-16 py-6 border-t border-gray-300">
-            <p class="text-sm text-gray-500">This interactive application visualizes an AI-focused computer science curriculum modeled after programs at MIT and Stanford.
-            <br>All visualizations were generated using Chart.js and Tailwind CSS. No SVG graphics or Mermaid JS were used in this output.</p>
-        </footer>
-
+    <!-- Premium Animated Background -->
+    <div class="premium-bg">
+        <div class="geometric-layer">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+        </div>
     </div>
 
-    <script>
-        const palette = {
-            indigo: 'rgb(99, 102, 241)',
-            teal: 'rgb(20, 184, 166)',
-            amber: 'rgb(245, 158, 11)',
-            rose: 'rgb(244, 63, 94)',
-            gray: 'rgb(107, 114, 128)'
-        };
+    <main class="premium-container">
+        <!-- Hero Section -->
+        <section class="hero-section glass-card">
+            <div class="hero-badge">
+                <span>✨</span>
+                <span>Premium AI Learning Platform</span>
+            </div>
+            
+            <div class="hero-icon">🤖</div>
+            
+            <h1 class="hero-title">AI Learning Hub</h1>
+            <p class="hero-subtitle">
+                Master artificial intelligence through 13 premium WhatsApp channels. 
+                Join thousands of learners advancing their AI skills daily.
+            </p>
+        </section>
 
-        const tooltipTitleCallback = (tooltipItems) => {
-            const item = tooltipItems[0];
-            let label = item.chart.data.labels[item.dataIndex];
-            if (Array.isArray(label)) { return label.join(' '); }
-            return label;
-        };
+        <!-- Stats Section -->
+        <section class="stats-grid" role="region" aria-label="Platform Statistics">
+            <div class="stat-card" style="--delay: 0s;">
+                <div class="stat-number">13+</div>
+                <div class="stat-label">AI Channels</div>
+            </div>
+            <div class="stat-card" style="--delay: 0.1s;">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Learning Access</div>
+            </div>
+            <div class="stat-card" style="--delay: 0.2s;">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Free Content</div>
+            </div>
+        </section>
 
-        const chartTooltipConfig = { plugins: { tooltip: { callbacks: { title: tooltipTitleCallback } } } };
+        <!-- Channels Section -->
+        <section class="channels-section" role="region" aria-label="AI Learning Channels">
+            <h2 class="section-title">Premium AI Learning Channels</h2>
+            
+            <div class="channels-grid">
+                <!-- Channel Cards -->
+                <a href="https://whatsapp.com/channel/0029VapThS265yDAfwe97c23" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 0s;" aria-label="Join ChatGPT learning channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo chatgpt" aria-hidden="true">GPT</div>
+                        <div class="channel-content"><h3 class="channel-title">ChatGPT Mastery</h3></div>
+                    </div>
+                    <p class="channel-description">Master ChatGPT with advanced prompting techniques, real-world applications, and cutting-edge strategies.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029Vb9js9sGpLHJGIvX5g1w" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 0.1s;" aria-label="Join Deepseek AI learning channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo deepseek" aria-hidden="true">DS</div>
+                        <div class="channel-content"><h3 class="channel-title">Deepseek AI</h3></div>
+                    </div>
+                    <p class="channel-description">Explore Deepseek's revolutionary AI capabilities, advanced coding assistance, and sophisticated reasoning models.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029Vb5Q4ly3mFY3Jz7qIu3i" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 0.2s;" aria-label="Join Google Gemini learning channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo gemini" aria-hidden="true">GM</div>
+                        <div class="channel-content"><h3 class="channel-title">Google Gemini</h3></div>
+                    </div>
+                    <p class="channel-description">Discover Google's revolutionary Gemini AI with multimodal capabilities, integration strategies, and the latest innovations.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VbAa05yISTkGgBqyC00U" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 0.3s;" aria-label="Join Perplexity AI learning channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo perplexity" aria-hidden="true">PX</div>
+                        <div class="channel-content"><h3 class="channel-title">Perplexity AI</h3></div>
+                    </div>
+                    <p class="channel-description">Master advanced research techniques with Perplexity AI. Learn intelligent information gathering and fact-checking.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VbAW0QBDOQIgYcbwBd1l" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 0.4s;" aria-label="Join Microsoft Copilot learning channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo copilot" aria-hidden="true">CP</div>
+                        <div class="channel-content"><h3 class="channel-title">Microsoft Copilot</h3></div>
+                    </div>
+                    <p class="channel-description">Integrate AI into your workflow with Microsoft Copilot. Get tips for Office 365, Windows, and development.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VazaRBY2UPBNj1aCrN0U" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 0.5s;" aria-label="Join Generative AI News channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo generative" aria-hidden="true">GN</div>
+                        <div class="channel-content"><h3 class="channel-title">Generative AI</h3></div>
+                    </div>
+                    <p class="channel-description">Stay updated with the latest breakthroughs in generative models, from image synthesis to text generation.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029Vb6ISO1Fsn0kEemhE03b" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 0.6s;" aria-label="Join Prompt Engineering channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo prompt" aria-hidden="true">PE</div>
+                        <div class="channel-content"><h3 class="channel-title">Prompt Engineering</h3></div>
+                    </div>
+                    <p class="channel-description">Learn the art and science of crafting effective prompts to get the best results from any language model.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VaoePz73bbV94yTh6V2E" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 0.7s;" aria-label="Join Artificial Intelligence channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo ai-general" aria-hidden="true">AI</div>
+                        <div class="channel-content"><h3 class="channel-title">Artificial Intelligence</h3></div>
+                    </div>
+                    <p class="channel-description">A community for discussing all things AI. Share news, ask questions, and explore the future of artificial intelligence.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VbAU3pWChq6T5bZxUk1r" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 0.8s;" aria-label="Join Grok AI channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo grok" aria-hidden="true">GR</div>
+                        <div class="channel-content"><h3 class="channel-title">Grok AI</h3></div>
+                    </div>
+                    <p class="channel-description">Dive into Grok, the AI with a rebellious streak. Learn to leverage its unique personality and real-time information access.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VbAKiI1FSAt81kV3lA0t" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 0.9s;" aria-label="Join Deeplearning AI channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo deeplearning" aria-hidden="true">DL</div>
+                        <div class="channel-content"><h3 class="channel-title">Deeplearning AI</h3></div>
+                    </div>
+                    <p class="channel-description">Explore neural networks, TensorFlow, and PyTorch. This channel covers the core concepts of deep learning models.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VbAWNue1iUxjLo2DFx2U" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 1.0s;" aria-label="Join AI Studio channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo studio" aria-hidden="true">AS</div>
+                        <div class="channel-content"><h3 class="channel-title">AI Studio</h3></div>
+                    </div>
+                    <p class="channel-description">Your hub for creative AI. Learn about AI-powered tools for art, music, design, and video creation.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VawtYcJ1iUxcMQoEuP0O" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 1.1s;" aria-label="Join Machine Learning channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo ml" aria-hidden="true">ML</div>
+                        <div class="channel-content"><h3 class="channel-title">Machine Learning</h3></div>
+                    </div>
+                    <p class="channel-description">Covering the fundamentals of machine learning, from regression to classification. Perfect for beginners and practitioners.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VaiM08SDuMRaGKd9Wv0L" class="channel-card" target="_blank" rel="noopener noreferrer" style="--stagger: 1.2s;" aria-label="Join Python Programming channel on WhatsApp">
+                    <div class="channel-header">
+                        <div class="channel-logo python" aria-hidden="true">PY</div>
+                        <div class="channel-content"><h3 class="channel-title">Python Programming</h3></div>
+                    </div>
+                    <p class="channel-description">Learn Python, the lingua franca of AI. Master libraries like NumPy, Pandas, and Scikit-learn to build powerful AI applications.</p>
+                    <button class="join-button"><span>📱</span><span>Join Channel</span></button>
+                </a>
+            </div>
+        </section>
+    </main>
 
-        const foundationsData = {
-            labels: ['Computer Science', 'Mathematics', 'Sciences', 'Humanities'],
-            datasets: [{
-                data: [8, 5, 2, 3],
-                backgroundColor: [palette.indigo, palette.teal, palette.amber, palette.gray],
-                borderColor: '#f8f9fa',
-                borderWidth: 4
-            }]
-        };
-
-        const foundationsCtx = document.getElementById('foundationsChart').getContext('2d');
-        const foundationsChart = new Chart(foundationsCtx, {
-            type: 'doughnut',
-            data: foundationsData,
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: { display: false },
-                    tooltip: chartTooltipConfig.plugins.tooltip
-                },
-                cutout: '60%'
-            }
-        });
-        
-        const legendContainer = document.getElementById('foundations-legend');
-        foundationsData.labels.forEach((label, i) => {
-            const color = foundationsData.datasets[0].backgroundColor[i];
-            const legendItem = document.createElement('div');
-            legendItem.className = 'flex items-center';
-            legendItem.innerHTML = `<span class="w-3 h-3 rounded-full mr-2" style="background-color: ${color}"></span>${label}`;
-            legendContainer.appendChild(legendItem);
-        });
-
-        const timelineData = {
-            5: {
-                title: 'The Gates of AI: Models, Languages, and Ethics',
-                courses: [
-                    { name: 'AI: Principles & Techniques', desc: 'Broad intro to classical AI, search, logic, and planning.' },
-                    { name: 'Machine Learning', desc: 'The cornerstone course. Supervised/unsupervised learning, and core theory.' },
-                    { name: 'Programming Languages', desc: 'Principles of language design, type systems, and models of computation.' },
-                    { name: 'AI Ethics & Public Policy', desc: 'Critical issues of bias, fairness, privacy, and accountability in AI.' }
-                ]
-            },
-            6: {
-                title: 'Deep Learning and Intelligent Systems',
-                courses: [
-                    { name: 'Deep Learning', desc: 'Thorough grounding in CNNs, RNNs, and Transformer architectures.' },
-                    { name: 'Deep Learning for Computer Vision', desc: 'Application-focused course on image classification, object detection, and segmentation.' },
-                    { name: 'Database Systems', desc: 'Principles of modern database design, SQL, and data management at scale.' },
-                    { name: 'Undergraduate Research Project I', desc: 'Begin a significant, multi-semester project emulating MIT\'s UROP program.' }
-                ]
-            },
-            7: {
-                title: 'Frontiers of Artificial Intelligence',
-                courses: [
-                    { name: 'NLP with Deep Learning', desc: 'Cutting-edge models for understanding language, focusing on Transformers (BERT, GPT).'},
-                    { name: 'Reinforcement Learning', desc: 'Training agents to make optimal decisions through interaction and reward.' },
-                    { name: 'Advanced Algorithms', desc: 'Graduate-level topics like randomized algorithms and network flow.' },
-                    { name: 'Undergraduate Research Project II', desc: 'Continue the capstone, focusing on implementation and analysis.' }
-                ]
-            },
-            8: {
-                title: 'Specialization Capstone and Advanced Research',
-                courses: [
-                    { name: 'Capstone Thesis / Senior Project', desc: 'Culmination of research into a written thesis and documented software artifact.' },
-                    { name: 'AI Elective I', desc: 'Choose a specialization like Computational Biology, Robotics, or Generative AI.' },
-                    { name: 'AI Elective II', desc: 'Choose an advanced topic like Distributed Systems, Compilers, or Quantum Computing.' },
-                    { name: 'Communication-Intensive Writing', desc: 'Hone the ability to clearly communicate complex technical ideas.' }
-                ]
-            }
-        };
-
-        const timelineNav = document.getElementById('timeline-nav');
-        const timelineContent = document.getElementById('timeline-content');
-
-        function updateTimeline(semester) {
-            const data = timelineData[semester];
-            let contentHtml = `<h3 class="text-xl font-bold text-gray-800 mb-4">${data.title}</h3><ul class="space-y-3">`;
-            data.courses.forEach(course => {
-                contentHtml += `<li class="p-3 bg-gray-50 rounded-md"><p class="font-semibold text-gray-700">${course.name}</p><p class="text-sm text-gray-600">${course.desc}</p></li>`;
-            });
-            contentHtml += '</ul>';
-            timelineContent.innerHTML = contentHtml;
-
-            document.querySelectorAll('.timeline-btn').forEach(btn => {
-                btn.classList.remove('active', 'text-indigo-600', 'border-indigo-600');
-                btn.classList.add('text-gray-500');
-                if (btn.dataset.semester === semester) {
-                    btn.classList.add('active', 'text-indigo-600', 'border-indigo-600');
-                    btn.classList.remove('text-gray-500');
-                }
-            });
-        }
-
-        timelineNav.addEventListener('click', (e) => {
-            if (e.target.matches('.timeline-btn')) {
-                updateTimeline(e.target.dataset.semester);
-            }
-        });
-        
-        updateTimeline('5');
-
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-
-        const navButtons = document.querySelectorAll('.nav-button');
-        const sections = document.querySelectorAll('main section');
-        
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navButtons.forEach(button => {
-                button.classList.remove('active');
-                if (button.textContent.toLowerCase().replace(' ', '-') === current || (current === 'philosophy' && button.textContent === 'Philosophy') || (current === 'profile' && button.textContent === 'Beyond Academia') || (current === 'specialization' && button.textContent === 'AI Specialization')) {
-                    button.classList.add('active');
-                }
-            });
-        });
-
-    </script>
+    <!-- Premium Footer -->
+    <footer class="premium-footer">
+        <div class="footer-content">
+            <h3 class="footer-title">AI Learning Hub</h3>
+            <p class="footer-subtitle">
+                &copy; 2024 AI Learning Hub. All rights reserved. Your journey into the future of technology starts here.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
